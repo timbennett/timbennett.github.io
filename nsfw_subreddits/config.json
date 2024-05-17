@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Discuss on Reddit",
+    "file": "http://i.imgur.com/o03xEit.png",
+    "link": "https://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/"
+  },
+  "text": {
+    "title": "Map of NSFW subreddits",
+    "more": "This is a map of NSFW subreddits based on their \u0027Related Subreddits\u0027 sidebar panel. Data collected by /u/uglyasablasphemy (https://np.reddit.com/r/dataisbeautiful/comments/3z2fc8/this_is_how_reddit_looks_like_if_you_link_every/).\n\nModerators can set a list of subreddits similar to their own. This map simply graphs that network for 2,200 subreddits marked not safe for work. The subreddits are sized by number of subscribers (though not to scale, otherwise big subreddits would take up too much space). The colour scheme uses Gephi\u0027s clustering function, so subreddits of the same colour are more closely related to each other than to other colours. Zoom in and see if you can discern any themes to the clusters - I believe some are content-related (and quite obvious) while others are not as clear. There are some peripheral subreddits with no links; these were linked to by one of the orphaned subreddits, and thus have no visible links.",
+    "intro": "This is a map of NSFW subreddits based on their \u0027Related Subreddits\u0027 sidebar panel. Data collected by /u/uglyasablasphemy and visualised by /u/flashman. (Still working on getting the sizes and labels right.)"
+  },
+  "legend": {
+    "edgeLabel": "Related link",
+    "colorLabel": "Cluster",
+    "nodeLabel": "Subreddit"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": false,
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "imageAttribute": false,
+    "groupByEdgeDirection": false
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 30,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1.2
+    },
+    "drawingProperties": {
+      "labelThreshold": 7,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#fff",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
